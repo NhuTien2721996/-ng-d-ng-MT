@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+    <link href="test.css" rel="stylesheet">
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="5"><input id="nhập" type="text"</td>
+    </tr>
+    <tr>
+        <td><input class="nnt" value="1" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="2" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="3" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="+" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="<--" type="button" onclick="nhập.value=nhập.value.substr(nhập.value,0, length -1)"></td>
+    </tr>
+    <tr>
+        <td><input class="nnt" value="4" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="5" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="6" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="-" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="C" type="button"onclick="nhập.value=' '"></td>
+    </tr>
+    <tr>
+        <td><input class="nnt" value="7" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="8" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="9" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="*" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="=" type="button" onclick="nhập.value=eval(nhập.value)"></td>
+    </tr>
+    <tr>
+        <td><input class="nnt" value="0" type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="." type="button" onclick="nhập.value+=this.value"></td>
+        <td><input class="nnt" value="/" type="button" onclick="nhập.value+=this.value"></td>
+    </tr>
+</table>
+</body>
+</html>
